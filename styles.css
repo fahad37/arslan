@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #006400;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #004d00;
+}
+
+/* Floating Button Animations */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0px); }
+}
+
+.floating-btn {
+    animation: float 3s ease-in-out infinite;
+}
+
+.whatsapp-btn { animation-delay: 0s; }
+.call-btn { animation-delay: 0.5s; }
+.bot-btn { animation-delay: 1s; }
+
+/* Service Card Hover Effect */
+.service-card:hover .service-img {
+    transform: scale(1.1);
+}
+
+/* Chat Window Transition */
+#chat-window.active {
+    display: block;
+    transform: scale(1);
+}
+
+/* Mobile Menu Transition */
+#mobile-menu {
+    transition: max-height 0.3s ease-in-out;
+}
